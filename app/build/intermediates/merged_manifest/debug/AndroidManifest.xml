@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.google_maps"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="31" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
+    <queries>
+
+        <!-- For browser content -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <!-- End of browser content -->
+        <!-- For CustomTabsService -->
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+        <!-- End of CustomTabsService -->
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.Google_Maps" >
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.google_maps.XML_Google_Maps"
+            android:exported="false"
+            android:label="@string/title_activity_xml_google_maps" />
+        <activity
+            android:name="com.example.google_maps.NotificationAct"
+            android:exported="true"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.SwipeRefresh"
+            android:exported="true"
+            android:label="@string/title_activity_swipe_refresh"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.BarCodeAct"
+            android:exported="true"
+            android:label="@string/title_activity_bar_code"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.VerticalHorizontalScroll"
+            android:exported="true"
+            android:label="@string/title_activity_vertical_horizontal_scroll"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.ScrollToTopBottomAct"
+            android:exported="true"
+            android:label="@string/title_activity_scroll_to_top_bottom"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.GoogleNotesBottomBarAct"
+            android:exported="true"
+            android:label="@string/title_activity_google_notes_bottom_bar"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.DaggerAct"
+            android:exported="false"
+            android:label="@string/title_activity_dagger"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.Navigation"
+            android:exported="true"
+            android:label="@string/title_activity_nvigation"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.NavigationDrawer"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.NavigationDrawerCustom"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.WebView"
+            android:exported="true"
+            android:label="@string/title_activity_web_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.LazyVerticalGrid"
+            android:exported="true"
+            android:label="@string/title_activity_lazy_vertical_grid"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.SwipeComposeReveal"
+            android:exported="true"
+            android:label="@string/title_activity_swipe_compose"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.Swipe"
+            android:exported="true"
+            android:label="@string/title_activity_swipe"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.ListItemAct"
+            android:exported="true"
+            android:label="@string/title_activity_list_item"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.TimeAct"
+            android:exported="true"
+            android:label="@string/title_activity_time"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.AssistantAct"
+            android:exported="true"
+            android:label="@string/title_activity_assistant"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.GoogleButton"
+            android:exported="true"
+            android:label="@string/title_activity_google_button"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.TimePickers"
+            android:exported="true"
+            android:label="@string/title_activity_time_pickers"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.ShimmerAct"
+            android:exported="true"
+            android:label="@string/title_activity_shimmer"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.ExpandableCardAct"
+            android:exported="true"
+            android:label="@string/title_activity_expandable_card"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.SqlRoomAct"
+            android:exported="false"
+            android:label="@string/title_activity_sql_room"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.MoreDetails"
+            android:exported="true"
+            android:label="@string/title_activity_more_details"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.ApiAct"
+            android:exported="true"
+            android:label="@string/title_activity_api"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.VideoAct"
+            android:exported="true"
+            android:label="@string/title_activity_video"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.Authentication"
+            android:exported="true"
+            android:label="@string/title_activity_authentication"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.PagerAct"
+            android:exported="true"
+            android:label="@string/title_activity_pager"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.AnimatedAct"
+            android:exported="true"
+            android:label="@string/title_activity_animated"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.TabAct"
+            android:exported="true"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.AdMobCompose"
+            android:exported="false"
+            android:label="@string/title_activity_ad_mob_compose"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.ButtonNavigationView"
+            android:exported="false"
+            android:label="@string/title_activity_intent_button_navigation_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.SearchView"
+            android:exported="false"
+            android:label="@string/title_activity_search_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.Gradient"
+            android:exported="false"
+            android:label="@string/title_activity_gradient"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.RecuclerView"
+            android:exported="false"
+            android:label="@string/title_activity_recucler_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name="com.example.google_maps.XMLMaps"
+            android:exported="false" />
+        <activity
+            android:name="com.example.google_maps.ComposeMaps"
+            android:exported="false"
+            android:label="@string/title_activity_compose_maps"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name="com.example.google_maps.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:authorities="com.example.google_maps.mobileadsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.google_maps.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" /> <!-- Required for Android P onwards. -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:visibleToInstantApps="true" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="genericidp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="recaptcha" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.google_maps.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

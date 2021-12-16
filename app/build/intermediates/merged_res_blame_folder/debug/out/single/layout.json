@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\student\\AndroidStudioProjects\\compose-git\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_xml_google_maps.xml",
+        "source": "C:\\Users\\student\\AndroidStudioProjects\\compose-git\\app\\src\\debug\\res\\layout\\activity_xml_google_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\student\\AndroidStudioProjects\\compose-git\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_xmlmaps.xml",
+        "source": "C:\\Users\\student\\AndroidStudioProjects\\compose-git\\app\\src\\main\\res\\layout\\activity_xmlmaps.xml"
+    },
+    {
+        "merged": "C:\\Users\\student\\AndroidStudioProjects\\compose-git\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admob.xml",
+        "source": "C:\\Users\\student\\AndroidStudioProjects\\compose-git\\app\\src\\main\\res\\layout\\activity_admob.xml"
+    }
+]

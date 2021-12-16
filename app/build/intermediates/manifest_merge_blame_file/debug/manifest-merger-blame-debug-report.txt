@@ -1,0 +1,969 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.google_maps"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the "MyLocation" functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:20:5-79
+15-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:20:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:6:5-67
+16-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:6:22-64
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:7:5-9:40
+17-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:8:9-65
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:10:5-79
+18-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:10:22-76
+19    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+19-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:11:5-98
+19-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:11:22-95
+20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+20-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:12:5-81
+20-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:12:22-78
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:13:5-75
+21-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:13:22-72
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:14:5-80
+22-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:14:22-77
+23    <uses-permission android:name="com.android.vending.BILLING" />
+23-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:15:5-67
+23-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:15:22-64
+24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+24-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:16:5-81
+24-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:16:22-78
+25    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+25-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:17:5-71
+25-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:17:22-68
+26    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+26-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:18:5-80
+26-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:18:22-77
+27    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+27-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:19:5-72
+27-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:19:22-69
+28    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
+28-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:25:5-79
+28-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:25:22-76
+29    <queries>
+29-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:28:5-44:15
+30
+31        <!-- For browser content -->
+32        <intent>
+32-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:31:9-37:18
+33            <action android:name="android.intent.action.VIEW" />
+33-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:32:13-65
+33-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:32:21-62
+34
+35            <category android:name="android.intent.category.BROWSABLE" />
+35-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:34:13-74
+35-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:34:23-71
+36
+37            <data android:scheme="https" />
+37-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:36:13-44
+37-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:36:19-41
+38        </intent>
+39        <!-- End of browser content -->
+40        <!-- For CustomTabsService -->
+41        <intent>
+41-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:40:9-42:18
+42            <action android:name="android.support.customtabs.action.CustomTabsService" />
+42-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:41:13-90
+42-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:41:21-87
+43        </intent>
+44        <!-- End of CustomTabsService -->
+45    </queries>
+46
+47    <uses-permission android:name="android.permission.WAKE_LOCK" />
+47-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:25:5-68
+47-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:25:22-65
+48    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Maps API needs OpenGL ES 2.0. -->
+48-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:28:5-77
+48-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:28:22-74
+49    <uses-feature
+49-->[com.google.android.libraries.maps:maps:3.1.0-beta] C:\Users\student\.gradle\caches\transforms-3\33c6254b6eac53edca4cb8b5a68fdc1c\transformed\jetified-maps-3.1.0-beta\AndroidManifest.xml:15:3-17:30
+50        android:glEsVersion="0x00020000"
+50-->[com.google.android.libraries.maps:maps:3.1.0-beta] C:\Users\student\.gradle\caches\transforms-3\33c6254b6eac53edca4cb8b5a68fdc1c\transformed\jetified-maps-3.1.0-beta\AndroidManifest.xml:16:5-37
+51        android:required="true" />
+51-->[com.google.android.libraries.maps:maps:3.1.0-beta] C:\Users\student\.gradle\caches\transforms-3\33c6254b6eac53edca4cb8b5a68fdc1c\transformed\jetified-maps-3.1.0-beta\AndroidManifest.xml:17:5-28
+52
+53    <application
+53-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:22:5-226:19
+54        android:allowBackup="true"
+54-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:23:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.7.0] C:\Users\student\.gradle\caches\transforms-3\8a4d2045066c1c4ef350351f4d969813\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+56        android:debuggable="true"
+57        android:icon="@mipmap/ic_launcher"
+57-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:24:9-43
+58        android:label="@string/app_name"
+58-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:25:9-41
+59        android:roundIcon="@mipmap/ic_launcher_round"
+59-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:26:9-54
+60        android:supportsRtl="true"
+60-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:27:9-35
+61        android:testOnly="true"
+62        android:theme="@style/Theme.Google_Maps" >
+62-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:28:9-49
+63
+64        <!--
+65             The API key for Google Maps-based APIs is defined as a string resource.
+66             (See the file "res/values/google_maps_api.xml").
+67             Note that the API key is linked to the encryption key used to sign the APK.
+68             You need a different API key for each encryption key, including the release key that is used to
+69             sign the APK for publishing.
+70             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+71        -->
+72        <meta-data
+72-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:200:9-202:55
+73            android:name="com.google.android.geo.API_KEY"
+73-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:201:13-58
+74            android:value="@string/google_maps_key" />
+74-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:202:13-52
+75
+76        <activity
+76-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\debug\AndroidManifest.xml:21:9-23:70
+77            android:name="com.example.google_maps.XML_Google_Maps"
+77-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\debug\AndroidManifest.xml:21:19-73
+78            android:exported="false"
+78-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\debug\AndroidManifest.xml:22:13-37
+79            android:label="@string/title_activity_xml_google_maps" />
+79-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\debug\AndroidManifest.xml:23:13-67
+80        <activity
+80-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:29:9-33:68
+81            android:name="com.example.google_maps.NotificationAct"
+81-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:30:13-44
+82            android:exported="true"
+82-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:31:13-36
+83            android:label="@string/title_activity_notification"
+83-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:32:13-64
+84            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+84-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:33:13-65
+85        <activity
+85-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:34:9-38:68
+86            android:name="com.example.google_maps.SwipeRefresh"
+86-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:35:13-41
+87            android:exported="true"
+87-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:36:13-36
+88            android:label="@string/title_activity_swipe_refresh"
+88-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:37:13-65
+89            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+89-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:38:13-65
+90        <activity
+90-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:39:9-43:68
+91            android:name="com.example.google_maps.BarCodeAct"
+91-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:40:13-39
+92            android:exported="true"
+92-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:41:13-36
+93            android:label="@string/title_activity_bar_code"
+93-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:42:13-60
+94            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+94-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:43:13-65
+95        <activity
+95-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:44:9-48:68
+96            android:name="com.example.google_maps.VerticalHorizontalScroll"
+96-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:45:13-53
+97            android:exported="true"
+97-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:46:13-36
+98            android:label="@string/title_activity_vertical_horizontal_scroll"
+98-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:47:13-78
+99            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+99-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:48:13-65
+100        <activity
+100-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:49:9-53:68
+101            android:name="com.example.google_maps.ScrollToTopBottomAct"
+101-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:50:13-49
+102            android:exported="true"
+102-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:51:13-36
+103            android:label="@string/title_activity_scroll_to_top_bottom"
+103-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:52:13-72
+104            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+104-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:53:13-65
+105        <activity
+105-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:54:9-58:68
+106            android:name="com.example.google_maps.GoogleNotesBottomBarAct"
+106-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:55:13-52
+107            android:exported="true"
+107-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:56:13-36
+108            android:label="@string/title_activity_google_notes_bottom_bar"
+108-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:57:13-75
+109            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+109-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:58:13-65
+110        <activity
+110-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:59:9-63:68
+111            android:name="com.example.google_maps.DaggerAct"
+111-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:60:13-38
+112            android:exported="false"
+112-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:61:13-37
+113            android:label="@string/title_activity_dagger"
+113-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:62:13-58
+114            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+114-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:63:13-65
+115        <activity
+115-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:64:9-68:68
+116            android:name="com.example.google_maps.Navigation"
+116-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:65:13-39
+117            android:exported="true"
+117-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:66:13-36
+118            android:label="@string/title_activity_nvigation"
+118-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:67:13-61
+119            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+119-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:68:13-65
+120        <activity
+120-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:69:9-73:68
+121            android:name="com.example.google_maps.NavigationDrawer"
+121-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:70:13-45
+122            android:exported="true"
+122-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:71:13-36
+123            android:label="@string/title_activity_navigation_drawer"
+123-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:72:13-69
+124            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+124-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:73:13-65
+125        <activity
+125-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:74:9-78:68
+126            android:name="com.example.google_maps.NavigationDrawerCustom"
+126-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:75:13-51
+127            android:exported="true"
+127-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:76:13-36
+128            android:label="@string/title_activity_navigation_drawer"
+128-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:77:13-69
+129            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+129-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:78:13-65
+130        <activity
+130-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:79:9-83:68
+131            android:name="com.example.google_maps.WebView"
+131-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:80:13-36
+132            android:exported="true"
+132-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:81:13-36
+133            android:label="@string/title_activity_web_view"
+133-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:82:13-60
+134            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+134-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:83:13-65
+135        <activity
+135-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:84:9-88:68
+136            android:name="com.example.google_maps.LazyVerticalGrid"
+136-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:85:13-45
+137            android:exported="true"
+137-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:86:13-36
+138            android:label="@string/title_activity_lazy_vertical_grid"
+138-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:87:13-70
+139            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+139-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:88:13-65
+140        <activity
+140-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:89:9-93:68
+141            android:name="com.example.google_maps.SwipeComposeReveal"
+141-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:90:13-47
+142            android:exported="true"
+142-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:91:13-36
+143            android:label="@string/title_activity_swipe_compose"
+143-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:92:13-65
+144            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+144-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:93:13-65
+145        <activity
+145-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:94:9-98:68
+146            android:name="com.example.google_maps.Swipe"
+146-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:95:13-34
+147            android:exported="true"
+147-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:96:13-36
+148            android:label="@string/title_activity_swipe"
+148-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:97:13-57
+149            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+149-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:98:13-65
+150        <activity
+150-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:99:9-103:68
+151            android:name="com.example.google_maps.ListItemAct"
+151-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:100:13-40
+152            android:exported="true"
+152-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:101:13-36
+153            android:label="@string/title_activity_list_item"
+153-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:102:13-61
+154            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+154-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:103:13-65
+155        <activity
+155-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:104:9-108:68
+156            android:name="com.example.google_maps.TimeAct"
+156-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:105:13-36
+157            android:exported="true"
+157-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:106:13-36
+158            android:label="@string/title_activity_time"
+158-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:107:13-56
+159            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+159-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:108:13-65
+160        <activity
+160-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:109:9-113:68
+161            android:name="com.example.google_maps.AssistantAct"
+161-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:110:13-41
+162            android:exported="true"
+162-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:111:13-36
+163            android:label="@string/title_activity_assistant"
+163-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:112:13-61
+164            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+164-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:113:13-65
+165        <activity
+165-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:114:9-118:68
+166            android:name="com.example.google_maps.GoogleButton"
+166-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:115:13-41
+167            android:exported="true"
+167-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:116:13-36
+168            android:label="@string/title_activity_google_button"
+168-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:117:13-65
+169            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+169-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:118:13-65
+170        <activity
+170-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:119:9-123:68
+171            android:name="com.example.google_maps.TimePickers"
+171-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:120:13-40
+172            android:exported="true"
+172-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:121:13-36
+173            android:label="@string/title_activity_time_pickers"
+173-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:122:13-64
+174            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+174-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:123:13-65
+175        <activity
+175-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:124:9-128:68
+176            android:name="com.example.google_maps.ShimmerAct"
+176-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:125:13-39
+177            android:exported="true"
+177-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:126:13-36
+178            android:label="@string/title_activity_shimmer"
+178-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:127:13-59
+179            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+179-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:128:13-65
+180        <activity
+180-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:129:9-133:68
+181            android:name="com.example.google_maps.ExpandableCardAct"
+181-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:130:13-46
+182            android:exported="true"
+182-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:131:13-36
+183            android:label="@string/title_activity_expandable_card"
+183-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:132:13-67
+184            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+184-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:133:13-65
+185        <activity
+185-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:134:9-138:68
+186            android:name="com.example.google_maps.SqlRoomAct"
+186-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:135:13-39
+187            android:exported="false"
+187-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:136:13-37
+188            android:label="@string/title_activity_sql_room"
+188-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:137:13-60
+189            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+189-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:138:13-65
+190        <activity
+190-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:139:9-143:68
+191            android:name="com.example.google_maps.MoreDetails"
+191-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:140:13-40
+192            android:exported="true"
+192-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:141:13-36
+193            android:label="@string/title_activity_more_details"
+193-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:142:13-64
+194            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+194-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:143:13-65
+195        <activity
+195-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:144:9-148:68
+196            android:name="com.example.google_maps.ApiAct"
+196-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:145:13-35
+197            android:exported="true"
+197-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:146:13-36
+198            android:label="@string/title_activity_api"
+198-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:147:13-55
+199            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+199-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:148:13-65
+200        <activity
+200-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:149:9-153:68
+201            android:name="com.example.google_maps.VideoAct"
+201-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:150:13-37
+202            android:exported="true"
+202-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:151:13-36
+203            android:label="@string/title_activity_video"
+203-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:152:13-57
+204            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+204-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:153:13-65
+205        <activity
+205-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:154:9-158:68
+206            android:name="com.example.google_maps.Authentication"
+206-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:155:13-43
+207            android:exported="true"
+207-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:156:13-36
+208            android:label="@string/title_activity_authentication"
+208-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:157:13-66
+209            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+209-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:158:13-65
+210        <activity
+210-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:159:9-163:68
+211            android:name="com.example.google_maps.PagerAct"
+211-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:160:13-37
+212            android:exported="true"
+212-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:161:13-36
+213            android:label="@string/title_activity_pager"
+213-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:162:13-57
+214            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+214-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:163:13-65
+215        <activity
+215-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:164:9-168:68
+216            android:name="com.example.google_maps.AnimatedAct"
+216-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:165:13-40
+217            android:exported="true"
+217-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:166:13-36
+218            android:label="@string/title_activity_animated"
+218-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:167:13-60
+219            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+219-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:168:13-65
+220        <activity
+220-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:169:9-173:68
+221            android:name="com.example.google_maps.TabAct"
+221-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:170:13-35
+222            android:exported="true"
+222-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:171:13-36
+223            android:label="@string/title_activity_tab"
+223-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:172:13-55
+224            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+224-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:173:13-65
+225        <activity
+225-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:174:9-178:68
+226            android:name="com.example.google_maps.AdMobCompose"
+226-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:175:13-41
+227            android:exported="false"
+227-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:176:13-37
+228            android:label="@string/title_activity_ad_mob_compose"
+228-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:177:13-66
+229            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+229-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:178:13-65
+230        <activity
+230-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:179:9-183:68
+231            android:name="com.example.google_maps.ButtonNavigationView"
+231-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:180:13-49
+232            android:exported="false"
+232-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:181:13-37
+233            android:label="@string/title_activity_intent_button_navigation_view"
+233-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:182:13-81
+234            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+234-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:183:13-65
+235        <activity
+235-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:184:9-188:68
+236            android:name="com.example.google_maps.SearchView"
+236-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:185:13-39
+237            android:exported="false"
+237-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:186:13-37
+238            android:label="@string/title_activity_search_view"
+238-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:187:13-63
+239            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+239-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:188:13-65
+240        <activity
+240-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:189:9-193:68
+241            android:name="com.example.google_maps.Gradient"
+241-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:190:13-37
+242            android:exported="false"
+242-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:191:13-37
+243            android:label="@string/title_activity_gradient"
+243-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:192:13-60
+244            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+244-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:193:13-65
+245        <activity
+245-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:194:9-198:68
+246            android:name="com.example.google_maps.RecuclerView"
+246-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:195:13-41
+247            android:exported="false"
+247-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:196:13-37
+248            android:label="@string/title_activity_recucler_view"
+248-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:197:13-65
+249            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+249-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:198:13-65
+250
+251        <meta-data
+251-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:203:9-205:70
+252            android:name="com.google.android.gms.ads.APPLICATION_ID"
+252-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:204:13-69
+253            android:value="ca-app-pub-3940256099942544~3347511713" />
+253-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:205:13-67
+254
+255        <activity
+255-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:207:9-209:40
+256            android:name="com.example.google_maps.XMLMaps"
+256-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:208:13-36
+257            android:exported="false" />
+257-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:209:13-37
+258        <activity
+258-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:210:9-214:68
+259            android:name="com.example.google_maps.ComposeMaps"
+259-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:211:13-40
+260            android:exported="false"
+260-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:212:13-37
+261            android:label="@string/title_activity_compose_maps"
+261-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:213:13-64
+262            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+262-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:214:13-65
+263        <activity
+263-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:215:9-225:20
+264            android:name="com.example.google_maps.MainActivity"
+264-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:216:13-41
+265            android:exported="true"
+265-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:217:13-36
+266            android:label="@string/app_name"
+266-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:218:13-45
+267            android:theme="@style/Theme.Google_Maps.NoActionBar" >
+267-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:219:13-65
+268            <intent-filter>
+268-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:220:13-224:29
+269                <action android:name="android.intent.action.MAIN" />
+269-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:221:17-69
+269-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:221:25-66
+270
+271                <category android:name="android.intent.category.LAUNCHER" />
+271-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:223:17-77
+271-->C:\Users\student\AndroidStudioProjects\compose-git\app\src\main\AndroidManifest.xml:223:27-74
+272            </intent-filter>
+273        </activity>
+274        <activity
+274-->[androidx.compose.ui:ui-tooling:1.0.5] C:\Users\student\.gradle\caches\transforms-3\d4429c13d339ef0aa5bf380d123a9d9b\transformed\jetified-ui-tooling-1.0.5\AndroidManifest.xml:25:9-27:39
+275            android:name="androidx.compose.ui.tooling.PreviewActivity"
+275-->[androidx.compose.ui:ui-tooling:1.0.5] C:\Users\student\.gradle\caches\transforms-3\d4429c13d339ef0aa5bf380d123a9d9b\transformed\jetified-ui-tooling-1.0.5\AndroidManifest.xml:26:13-71
+276            android:exported="true" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+276-->[androidx.compose.ui:ui-tooling:1.0.5] C:\Users\student\.gradle\caches\transforms-3\d4429c13d339ef0aa5bf380d123a9d9b\transformed\jetified-ui-tooling-1.0.5\AndroidManifest.xml:27:13-36
+277        <activity
+277-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:49:9-53:64
+278            android:name="com.google.android.gms.ads.AdActivity"
+278-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:50:13-65
+279            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+279-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:51:13-122
+280            android:exported="false"
+280-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:52:13-37
+281            android:theme="@android:style/Theme.Translucent" />
+281-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:53:13-61
+282
+283        <provider
+283-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:55:9-59:39
+284            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+284-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:56:13-76
+285            android:authorities="com.example.google_maps.mobileadsinitprovider"
+285-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:57:13-73
+286            android:exported="false"
+286-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:58:13-37
+287            android:initOrder="100" />
+287-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:59:13-36
+288
+289        <service
+289-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:61:9-64:40
+290            android:name="com.google.android.gms.ads.AdService"
+290-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:62:13-64
+291            android:enabled="true"
+291-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:63:13-35
+292            android:exported="false" />
+292-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:64:13-37
+293
+294        <provider
+294-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:31:9-39:20
+295            android:name="androidx.startup.InitializationProvider"
+295-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:32:13-67
+296            android:authorities="com.example.google_maps.androidx-startup"
+296-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:33:13-68
+297            android:exported="false" >
+297-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:34:13-37
+298            <meta-data
+298-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
+299                android:name="androidx.work.WorkManagerInitializer"
+299-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
+300                android:value="androidx.startup" />
+300-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
+301            <meta-data
+301-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:31:13-33:52
+302                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+302-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:32:17-85
+303                android:value="androidx.startup" />
+303-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:33:17-49
+304        </provider>
+305
+306        <service
+306-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
+307            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+307-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
+308            android:directBootAware="false"
+308-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
+309            android:enabled="@bool/enable_system_alarm_service_default"
+309-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
+310            android:exported="false" />
+310-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
+311        <service
+311-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
+312            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+312-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
+313            android:directBootAware="false"
+313-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
+314            android:enabled="@bool/enable_system_job_service_default"
+314-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
+315            android:exported="true"
+315-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
+316            android:permission="android.permission.BIND_JOB_SERVICE" />
+316-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
+317        <service
+317-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
+318            android:name="androidx.work.impl.foreground.SystemForegroundService"
+318-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
+319            android:directBootAware="false"
+319-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
+320            android:enabled="@bool/enable_system_foreground_service_default"
+320-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
+321            android:exported="false" />
+321-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
+322
+323        <receiver
+323-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
+324            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+324-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
+325            android:directBootAware="false"
+325-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
+326            android:enabled="true"
+326-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
+327            android:exported="false" />
+327-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
+328        <receiver
+328-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
+329            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+329-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
+330            android:directBootAware="false"
+330-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
+331            android:enabled="false"
+331-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
+332            android:exported="false" >
+332-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
+333            <intent-filter>
+333-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
+334                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+334-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
+334-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
+335                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+335-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
+335-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
+336            </intent-filter>
+337        </receiver>
+338        <receiver
+338-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
+339            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+339-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
+340            android:directBootAware="false"
+340-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
+341            android:enabled="false"
+341-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
+342            android:exported="false" >
+342-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
+343            <intent-filter>
+343-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
+344                <action android:name="android.intent.action.BATTERY_OKAY" />
+344-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
+344-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
+345                <action android:name="android.intent.action.BATTERY_LOW" />
+345-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
+345-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
+346            </intent-filter>
+347        </receiver>
+348        <receiver
+348-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
+349            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+349-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
+350            android:directBootAware="false"
+350-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
+351            android:enabled="false"
+351-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
+352            android:exported="false" >
+352-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
+353            <intent-filter>
+353-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
+354                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+354-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
+354-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
+355                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+355-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
+355-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
+356            </intent-filter>
+357        </receiver>
+358        <receiver
+358-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
+359            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+359-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
+360            android:directBootAware="false"
+360-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
+361            android:enabled="false"
+361-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
+362            android:exported="false" >
+362-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
+363            <intent-filter>
+363-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
+364                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+364-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
+364-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
+365            </intent-filter>
+366        </receiver>
+367        <receiver
+367-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
+368            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+368-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
+369            android:directBootAware="false"
+369-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
+370            android:enabled="false"
+370-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
+371            android:exported="false" >
+371-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
+372            <intent-filter>
+372-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
+373                <action android:name="android.intent.action.BOOT_COMPLETED" />
+373-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:117:17-79
+373-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:117:25-76
+374                <action android:name="android.intent.action.TIME_SET" />
+374-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
+374-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
+375                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+375-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
+375-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
+376            </intent-filter>
+377        </receiver>
+378        <receiver
+378-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
+379            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+379-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
+380            android:directBootAware="false"
+380-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
+381            android:enabled="@bool/enable_system_alarm_service_default"
+381-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
+382            android:exported="false" >
+382-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
+383            <intent-filter>
+383-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
+384                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+384-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
+384-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
+385            </intent-filter>
+386        </receiver>
+387        <receiver
+387-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
+388            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+388-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
+389            android:directBootAware="false"
+389-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
+390            android:enabled="true"
+390-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
+391            android:exported="true"
+391-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
+392            android:permission="android.permission.DUMP" >
+392-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
+393            <intent-filter>
+393-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
+394                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+394-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
+394-->[androidx.work:work-runtime:2.7.0] C:\Users\student\.gradle\caches\transforms-3\9728d8e2b829fef86087fabce6585afb\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+395            </intent-filter>
+396        </receiver>
+397
+398        <service
+398-->[androidx.room:room-runtime:2.3.0] C:\Users\student\.gradle\caches\transforms-3\234d9854982b478320a7ecd37406ddea\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+399            android:name="androidx.room.MultiInstanceInvalidationService"
+399-->[androidx.room:room-runtime:2.3.0] C:\Users\student\.gradle\caches\transforms-3\234d9854982b478320a7ecd37406ddea\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+400            android:directBootAware="true"
+400-->[androidx.room:room-runtime:2.3.0] C:\Users\student\.gradle\caches\transforms-3\234d9854982b478320a7ecd37406ddea\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+401            android:exported="false" /> <!-- Required for Android P onwards. -->
+401-->[androidx.room:room-runtime:2.3.0] C:\Users\student\.gradle\caches\transforms-3\234d9854982b478320a7ecd37406ddea\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+402        <uses-library
+402-->[com.google.android.libraries.maps:maps:3.1.0-beta] C:\Users\student\.gradle\caches\transforms-3\33c6254b6eac53edca4cb8b5a68fdc1c\transformed\jetified-maps-3.1.0-beta\AndroidManifest.xml:20:7-86
+403            android:name="org.apache.http.legacy"
+403-->[com.google.android.libraries.maps:maps:3.1.0-beta] C:\Users\student\.gradle\caches\transforms-3\33c6254b6eac53edca4cb8b5a68fdc1c\transformed\jetified-maps-3.1.0-beta\AndroidManifest.xml:20:21-58
+404            android:required="false" />
+404-->[com.google.android.libraries.maps:maps:3.1.0-beta] C:\Users\student\.gradle\caches\transforms-3\33c6254b6eac53edca4cb8b5a68fdc1c\transformed\jetified-maps-3.1.0-beta\AndroidManifest.xml:20:59-83
+405
+406        <activity
+406-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
+407            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+407-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
+408            android:excludeFromRecents="true"
+408-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
+409            android:exported="false"
+409-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
+410            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+410-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
+411        <!--
+412            Service handling Google Sign-In user revocation. For apps that do not integrate with
+413            Google Sign-In, this service will never be started.
+414        -->
+415        <service
+415-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
+416            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+416-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
+417            android:exported="true"
+417-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
+418            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+418-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
+419            android:visibleToInstantApps="true" />
+419-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\student\.gradle\caches\transforms-3\0d98fd1d5d8dacc37cc68ba8cecdd340\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
+420        <service
+420-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\student\.gradle\caches\transforms-3\006240afa5478f6ae81563be2aea1afe\transformed\jetified-firebase-auth-ktx-21.0.1\AndroidManifest.xml:8:9-14:19
+421            android:name="com.google.firebase.components.ComponentDiscoveryService"
+421-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\student\.gradle\caches\transforms-3\006240afa5478f6ae81563be2aea1afe\transformed\jetified-firebase-auth-ktx-21.0.1\AndroidManifest.xml:9:13-84
+422            android:directBootAware="true"
+422-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+423            android:exported="false" >
+423-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\student\.gradle\caches\transforms-3\006240afa5478f6ae81563be2aea1afe\transformed\jetified-firebase-auth-ktx-21.0.1\AndroidManifest.xml:10:13-37
+424            <meta-data
+424-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\student\.gradle\caches\transforms-3\006240afa5478f6ae81563be2aea1afe\transformed\jetified-firebase-auth-ktx-21.0.1\AndroidManifest.xml:11:13-13:85
+425                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+425-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\student\.gradle\caches\transforms-3\006240afa5478f6ae81563be2aea1afe\transformed\jetified-firebase-auth-ktx-21.0.1\AndroidManifest.xml:12:17-116
+426                android:value="com.google.firebase.components.ComponentRegistrar" />
+426-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\student\.gradle\caches\transforms-3\006240afa5478f6ae81563be2aea1afe\transformed\jetified-firebase-auth-ktx-21.0.1\AndroidManifest.xml:13:17-82
+427            <meta-data
+427-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+428                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+428-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+429                android:value="com.google.firebase.components.ComponentRegistrar" />
+429-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+430            <meta-data
+430-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\student\.gradle\caches\transforms-3\dd7480cd18068480dfec0b847ec6082a\transformed\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
+431                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+431-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\student\.gradle\caches\transforms-3\dd7480cd18068480dfec0b847ec6082a\transformed\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
+432                android:value="com.google.firebase.components.ComponentRegistrar" />
+432-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\student\.gradle\caches\transforms-3\dd7480cd18068480dfec0b847ec6082a\transformed\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
+433        </service>
+434
+435        <activity
+435-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+436            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+436-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+437            android:excludeFromRecents="true"
+437-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+438            android:exported="true"
+438-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+439            android:launchMode="singleTask"
+439-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+440            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+440-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+441            <intent-filter>
+441-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+442                <action android:name="android.intent.action.VIEW" />
+442-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:32:13-65
+442-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:32:21-62
+443
+444                <category android:name="android.intent.category.DEFAULT" />
+444-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+444-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+445                <category android:name="android.intent.category.BROWSABLE" />
+445-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:34:13-74
+445-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:34:23-71
+446
+447                <data
+447-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:36:13-44
+448                    android:host="firebase.auth"
+449                    android:path="/"
+450                    android:scheme="genericidp" />
+450-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:36:19-41
+451            </intent-filter>
+452        </activity>
+453        <activity
+453-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+454            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+454-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+455            android:excludeFromRecents="true"
+455-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+456            android:exported="true"
+456-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+457            android:launchMode="singleTask"
+457-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+458            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+458-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+459            <intent-filter>
+459-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+460                <action android:name="android.intent.action.VIEW" />
+460-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:32:13-65
+460-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:32:21-62
+461
+462                <category android:name="android.intent.category.DEFAULT" />
+462-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+462-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+463                <category android:name="android.intent.category.BROWSABLE" />
+463-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:34:13-74
+463-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:34:23-71
+464
+465                <data
+465-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:36:13-44
+466                    android:host="firebase.auth"
+467                    android:path="/"
+468                    android:scheme="recaptcha" />
+468-->[com.google.android.gms:play-services-ads-lite:20.5.0] C:\Users\student\.gradle\caches\transforms-3\bd4d20d054d2342d35ddc08fe1dd5c87\transformed\jetified-play-services-ads-lite-20.5.0\AndroidManifest.xml:36:19-41
+469            </intent-filter>
+470        </activity>
+471
+472        <service
+472-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+473            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+473-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+474            android:enabled="true"
+474-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+475            android:exported="false" >
+475-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+476            <intent-filter>
+476-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+477                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+477-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+477-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+478
+479                <category android:name="android.intent.category.DEFAULT" />
+479-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+479-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\student\.gradle\caches\transforms-3\a95cc6fca8643b1e66ec0690caa36a38\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+480            </intent-filter>
+481        </service>
+482
+483        <provider
+483-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+484            android:name="com.google.firebase.provider.FirebaseInitProvider"
+484-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+485            android:authorities="com.example.google_maps.firebaseinitprovider"
+485-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+486            android:directBootAware="true"
+486-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+487            android:exported="false"
+487-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+488            android:initOrder="100" />
+488-->[com.google.firebase:firebase-common:20.0.0] C:\Users\student\.gradle\caches\transforms-3\894c37e07684355542a3d6fb0a82529b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+489
+490        <activity
+490-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\student\.gradle\caches\transforms-3\8ff0838567dbf35014b63ded3001a7fa\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:23:9-26:75
+491            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+491-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\student\.gradle\caches\transforms-3\8ff0838567dbf35014b63ded3001a7fa\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:24:13-79
+492            android:exported="false"
+492-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\student\.gradle\caches\transforms-3\8ff0838567dbf35014b63ded3001a7fa\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:25:13-37
+493            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+493-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\student\.gradle\caches\transforms-3\8ff0838567dbf35014b63ded3001a7fa\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:26:13-72
+494
+495        <meta-data
+495-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\student\.gradle\caches\transforms-3\633c1b59b337c1d65006fc1faac1db3b\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
+496            android:name="com.google.android.gms.version"
+496-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\student\.gradle\caches\transforms-3\633c1b59b337c1d65006fc1faac1db3b\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+497            android:value="@integer/google_play_services_version" />
+497-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\student\.gradle\caches\transforms-3\633c1b59b337c1d65006fc1faac1db3b\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
+498
+499        <receiver
+499-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:36:9-45:20
+500            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+500-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:37:13-76
+501            android:directBootAware="false"
+501-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:38:13-44
+502            android:enabled="true"
+502-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:39:13-35
+503            android:exported="true"
+503-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:40:13-36
+504            android:permission="android.permission.DUMP" >
+504-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:41:13-57
+505            <intent-filter>
+505-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:42:13-44:29
+506                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+506-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:43:17-91
+506-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\student\.gradle\caches\transforms-3\eaf7f7855ccce2d98c3313ec18ae5c8d\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:43:25-88
+507            </intent-filter>
+508        </receiver>
+509    </application>
+510
+511</manifest>

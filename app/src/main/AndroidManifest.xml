@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.google_maps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Google_Maps">
+        <activity
+            android:name=".NotificationAct"
+            android:exported="true"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".SwipeRefresh"
+            android:exported="true"
+            android:label="@string/title_activity_swipe_refresh"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".BarCodeAct"
+            android:exported="true"
+            android:label="@string/title_activity_bar_code"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".VerticalHorizontalScroll"
+            android:exported="true"
+            android:label="@string/title_activity_vertical_horizontal_scroll"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".ScrollToTopBottomAct"
+            android:exported="true"
+            android:label="@string/title_activity_scroll_to_top_bottom"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".GoogleNotesBottomBarAct"
+            android:exported="true"
+            android:label="@string/title_activity_google_notes_bottom_bar"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".DaggerAct"
+            android:exported="false"
+            android:label="@string/title_activity_dagger"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".Navigation"
+            android:exported="true"
+            android:label="@string/title_activity_nvigation"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawer"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawerCustom"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".WebView"
+            android:exported="true"
+            android:label="@string/title_activity_web_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".LazyVerticalGrid"
+            android:exported="true"
+            android:label="@string/title_activity_lazy_vertical_grid"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".SwipeComposeReveal"
+            android:exported="true"
+            android:label="@string/title_activity_swipe_compose"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".Swipe"
+            android:exported="true"
+            android:label="@string/title_activity_swipe"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".ListItemAct"
+            android:exported="true"
+            android:label="@string/title_activity_list_item"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".TimeAct"
+            android:exported="true"
+            android:label="@string/title_activity_time"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".AssistantAct"
+            android:exported="true"
+            android:label="@string/title_activity_assistant"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".GoogleButton"
+            android:exported="true"
+            android:label="@string/title_activity_google_button"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".TimePickers"
+            android:exported="true"
+            android:label="@string/title_activity_time_pickers"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".ShimmerAct"
+            android:exported="true"
+            android:label="@string/title_activity_shimmer"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".ExpandableCardAct"
+            android:exported="true"
+            android:label="@string/title_activity_expandable_card"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".SqlRoomAct"
+            android:exported="false"
+            android:label="@string/title_activity_sql_room"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".MoreDetails"
+            android:exported="true"
+            android:label="@string/title_activity_more_details"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".ApiAct"
+            android:exported="true"
+            android:label="@string/title_activity_api"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".VideoAct"
+            android:exported="true"
+            android:label="@string/title_activity_video"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".Authentication"
+            android:exported="true"
+            android:label="@string/title_activity_authentication"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".PagerAct"
+            android:exported="true"
+            android:label="@string/title_activity_pager"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".AnimatedAct"
+            android:exported="true"
+            android:label="@string/title_activity_animated"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".TabAct"
+            android:exported="true"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".AdMobCompose"
+            android:exported="false"
+            android:label="@string/title_activity_ad_mob_compose"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".ButtonNavigationView"
+            android:exported="false"
+            android:label="@string/title_activity_intent_button_navigation_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".SearchView"
+            android:exported="false"
+            android:label="@string/title_activity_search_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".Gradient"
+            android:exported="false"
+            android:label="@string/title_activity_gradient"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".RecuclerView"
+            android:exported="false"
+            android:label="@string/title_activity_recucler_view"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".XMLMaps"
+            android:exported="false" />
+        <activity
+            android:name=".ComposeMaps"
+            android:exported="false"
+            android:label="@string/title_activity_compose_maps"
+            android:theme="@style/Theme.Google_Maps.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Google_Maps.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

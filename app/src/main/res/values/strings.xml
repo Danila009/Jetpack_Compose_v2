@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Google_Maps</string>
+    <string name="title_activity_compose_maps">ComposeMaps</string>
+    <string name="title_activity_xml_googlemaps">XML_GOOGLEMAPS</string>
+    <string name="title_activity_test_maps_google">TestMapsGoogle</string>
+    <string name="title_activity_recucler_view">RecuclerView</string>
+    <string name="title_activity_gradient">Gradient</string>
+    <string name="title_activity_search_view">SearchView</string>
+    <string name="title_activity_intent_button_navigation_view">intentButtonNavigationView</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="title_activity_ad_mob_compose">AdMobCompose</string>
+    <string name="title_activity_tab">TabAct</string>
+    <string name="title_activity_animated">AnimatedAct</string>
+    <string name="title_activity_pager">PagerAct</string>
+    <string name="title_activity_lazy_vertical_grid">LazyVerticalGrid</string>
+    <string name="title_activity_authentication">Authentication</string>
+    <string name="title_activity_video">VideoAct</string>
+    <string name="title_activity_api">ApiAct</string>
+    <string name="title_activity_more_details">MoreDetails</string>
+    <string name="title_activity_retrofit">Retrofit</string>
+    <string name="title_activity_sql_room">SqlRoomAct</string>
+    <string name="title_activity_shimmer">ShimmerAct</string>
+    <string name="title_activity_expandable_card">ExpandableCardAct</string>
+    <string name="title_activity_time_pickers">TimePickers</string>
+    <string name="title_activity_google_button">GoogleButton</string>
+    <string name="title_activity_assistant">AssistantAct</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="title_activity_time">TimeAct</string>
+    <string name="title_activity_list_item">ListItemAct</string>
+    <string name="title_activity_swipe_refresh">SwipeRefresh</string>
+    <string name="title_activity_swipe">Swipe</string>
+    <string name="title_activity_swipe_compose">SwipeCompose</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_nvigation">Nvigation</string>
+    <string name="title_activity_dagger">DaggerAct</string>
+    <string name="title_activity_google_notes_bottom_bar">GoogleNotesBottomBarAct</string>
+    <string name="title_activity_scroll_to_top_bottom">ScrollToTopBottomAct</string>
+
+    <string name="prompt_info_title">Образец аутентификации \n</string>
+    <string name="prompt_info_subtitle">Пожалуйста, войдите, чтобы получить доступ</string>
+    <string name="prompt_info_description">Пример биометрической аутентификации Android</string>
+    <string name="prompt_info_use_app_password">Использовать пароль</string>
+    <string name="title_activity_vertical_horizontal_scroll">VerticalHorizontalScroll</string>
+    <string name="title_activity_bar_code">BarCodeAct</string>
+</resources>
